@@ -1,3 +1,4 @@
+cse-config-order: 100
 APPLICATION_ID: springmvctest
 service_description:
   name: cpts
@@ -24,3 +25,9 @@ cse:
     accessKey: OFM4RHRPSIUB2BWAMBGU
     secretKey: bMjVNdNDlw6hrd5qp838fi5CruaaMnlaleHInzlm
     akskCustomCipher: default
+  handler:
+    chain:
+      provider:
+        default: perf-stats,bizkeeper-provider
+      Consumer:
+        default: perf-stats,bizkeeper-consumer
